@@ -58,7 +58,16 @@ class ItemController extends Controller
         //
         return view('admin.dashboard.items.create');
     }
+     
+    /**
+     * Dropdown Items List 
+     */
 
+    public function itemsList()
+    {
+       $items=Item::latest()->get();
+       return response()->json($items);
+    }
     /**
      * Store a newly created resource in storage.
      *

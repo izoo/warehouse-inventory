@@ -159,8 +159,87 @@
             </ul>
         </li>
 
+        <li class="menu">
+            <a href="#charges" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                <div class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="feather feather-zap">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                    <span>Charge Plans</span>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="feather feather-chevron-right">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </div>
+            </a>
+            <ul class="collapse submenu list-unstyled" id="charges" data-parent="#accordionExample">
+                <li>
+                    <a href="{{ route('charges.create') }}" > New Charge Plan </a>
+                </li>
+                <li>
+                    <a href="{{ route('charges.index') }}"> Charges Plan List </a>
+                </li>
 
+            </ul>
+        </li>
+        <li class="menu">
+            <a href="#bookings" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                <div class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="feather feather-zap">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                    <span>Bookings</span>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="feather feather-chevron-right">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </div>
+            </a>
+            <ul class="collapse submenu list-unstyled" id="bookings" data-parent="#accordionExample">
+                
+                <li>
+                    <a href="{{ route('bookings.index') }}"> Bookings List </a>
+                </li>
 
+            </ul>
+        </li>
+
+        <li class="menu">
+            <a href="#checkins" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                <div class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="feather feather-zap">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                    <span>Check Ins</span>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="feather feather-chevron-right">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </div>
+            </a>
+            <ul class="collapse submenu list-unstyled" id="checkins" data-parent="#accordionExample">
+                
+                <li>
+                    <a href="{{ route('warehouse-assignment.index') }}"> Check Ins List </a>
+                </li>
+
+            </ul>
+        </li>
      
 
 

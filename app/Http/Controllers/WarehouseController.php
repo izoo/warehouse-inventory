@@ -47,6 +47,16 @@ class WarehouseController extends Controller
         return view('admin.dashboard.warehouses.create');
     }
 
+     /**
+     * Dropdown Warehouse List 
+     */
+
+    public function warehousesList()
+    {
+       $warehouses=Warehouse::latest()->get();
+       return response()->json($warehouses);
+    }
+
     /**
      * Store a newly created resource in storage.
      *
@@ -55,7 +65,7 @@ class WarehouseController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
         //
         $validator = Validator::make($request->all(),[
             'code' => 'required|max:255',

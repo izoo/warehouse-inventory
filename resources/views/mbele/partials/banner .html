@@ -1,0 +1,71 @@
+<div id="banner" class="banner--section pd--80-0">
+    <div class="row ">
+    <div class="col-md-8 col-lg-8 col-sm-4">
+    <div class="banner--slider owl-carousel" data-owl-dots="true">
+        @foreach($banners as $banner)
+
+        <div class="banner--item">
+            <div class="vc--parent">
+                <div class="vc--child">
+                    <div class="container">
+                        <div class="row">
+                            <div class="banner--content ">
+
+                                <img src="{{asset('uploads/thumbnail/banners/' . $banner->banner_image . '.webp')}}"
+                                    alt="Image Goes Here">
+                                <p style="padding:2%">
+                                    <a href="{{url('shop')}}" class="btn btn-default">SHOP NOW</a>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @endforeach
+
+    </div>
+</div>
+<div class="col-md-8 col-lg-8 col-sm-4">
+    <div class="banner--form" data-form="ajax">
+        <div class="container">
+           
+                
+                    <div style="text-align:center;">
+                        <h2 class="h4 text-center">Mobile Repair Services We Offer</h2>
+
+                        <span style="margin: 0 0 10px;">For All Phone Brands</span>
+                    </div>
+                    <ul class="nav">
+                        <li>
+                            <a href="#"><i class="fa fa-angle-double-right"></i>Cracked| broken screen Replacement</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-angle-double-right"></i>Water damage repair</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-angle-double-right"></i>Phone Battery replacement</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-angle-double-right"></i>Charging port Repair| Replacement </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-angle-double-right"></i>Front| rear camera Repair| replacement
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-angle-double-right"></i>Speaker Replacement| Repair</a>
+                        </li>
+                    </ul>
+                    <p style="padding:3%">
+                        <a href="{{url('appointment')}}" class="btn btn-default">MAKE APPOINTMENT</a>
+                    </p>
+
+                
+            
+        </div>
+    </div>
+</div>
+</div>
+</div>
